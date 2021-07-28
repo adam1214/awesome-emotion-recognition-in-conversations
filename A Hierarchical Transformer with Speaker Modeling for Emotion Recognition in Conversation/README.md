@@ -70,7 +70,8 @@
             ![](https://i.imgur.com/xv2IkX1.png)
         *    Attention:As the contributions of different speaker parties are diversely weighted, it is feasible that the model automatically chooses the more important information. Therefore, we utilize the widely used attention to achieve this goal.
             ![](https://i.imgur.com/ckOblwm.png)
-            O_i dim:3*d_u(i指的是dialog編號), w_F(trainable parameter) dim.:1*d_u, alpha dim:1*3, R_i dim:1*d_u, 最後R dim:N*d_u
+            
+        Oi dim:(3,du)(i指的是dialog編號), wF(trainable parameter) dim.:(1,du), alpha dim:(1,3), Ri dim:(1,du), 最後R dim:(N,du)
 
 ### Classifier
 *    dialogue-level output is fed to a classifier which predicts the final emotion distributions
